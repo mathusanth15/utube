@@ -3,21 +3,21 @@ import os
 
 class Config:
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    BOT_TOKEN = os.environ.get("2049035615:AAGe-i1F3bqgx--u-ZCUPkFqHeX3dd9UefY")
 
-    SESSION_NAME = os.environ.get("SESSION_NAME", ":memory:")
+    SESSION_NAME = os.environ.get("utubexnbot", ":memory:")
 
-    API_ID = int(os.environ.get("API_ID"))
+    API_ID = int(os.environ.get("5615631"))
 
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = os.environ.get("f65d600ff580456871cfddc086337b7a")
 
-    CLIENT_ID = os.environ.get("CLIENT_ID")
+    CLIENT_ID = os.environ.get("921912615039-20vufhe7in808ndndeqi6b22dku97c3d.apps.googleusercontent.com")
 
-    CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
+    CLIENT_SECRET = os.environ.get("n4U9JX7LI_AYOOGCNkpfIluH")
 
-    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+    BOT_OWNER = int(os.environ.get("1496802577"))
 
-    AUTH_USERS_TEXT = os.environ.get("AUTH_USERS", "")
+    AUTH_USERS_TEXT = os.environ.get("1496802577", "")
 
     AUTH_USERS = [BOT_OWNER, 374321319] + (
         [int(user.strip()) for user in AUTH_USERS_TEXT.split(",")]
@@ -44,7 +44,7 @@ class Config:
         if UPLOAD_MODE.lower() in ["private", "public", "unlisted"]:
             UPLOAD_MODE = UPLOAD_MODE.lower()
         else:
-            UPLOAD_MODE = False
+            UPLOAD_MODE = ture
 
     CRED_FILE = "auth_token.txt"
 import os
